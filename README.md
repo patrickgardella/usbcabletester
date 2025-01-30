@@ -1,10 +1,12 @@
-# How to Interpret/Read the LEDs for the Treedix USB Cable Tester
+# How to Interpret/Read the LEDs for USB Cable Testers
 
 **NOTE** This is a work in progress. Please leave comments or better, pull requests, with updates. Please verify with actual cables. 
 
 ## Description
 
-The [Treedix USB Cable Tester](https://amzn.to/3PSow5w) (affiliate link) is an inexpensive, but highly functional USB Cable Tester. You can use it to identify and test many different types of USB cables, including unusual ones.
+For the initial work, I am using the [Treedix USB Cable Tester](https://amzn.to/3PSow5w) (affiliate link). The [Treedix USB Cable Tester](https://amzn.to/3PSow5w) (affiliate link) is an inexpensive, but highly functional USB Cable Tester. You can use it to identify and test many different types of USB cables, including unusual ones.
+
+Others should use this same pattern, but there could be additional things other cable testers are testing for. Feel free to send [me](https://github.com/patrickgardella) one, and I'll add it here.
 
 ## References
 * [USB hardware - Wikipedia](https://en.wikipedia.org/wiki/USB_hardware)
@@ -25,7 +27,7 @@ The Treedix USB Cable tester can test the following plugs:
 * USB 3.0 B
 * USB 3.0 C (Male and Female) 
 
-You can use this diagram to understand what each plug looks like and the common arrangements
+You can use this diagram to understand what each plug looks like and the common arrangements.
 
 ![USB Plug Diagram from Wikipedia](/images/Wikipedia-CommonUSBCables.png)
 
