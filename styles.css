@@ -1,0 +1,15 @@
+.row>div {
+    border: 1px solid grey;
+}
+
+.form-switch.form-switch-md {
+    margin-bottom: 1rem; /* JUST FOR STYLING PURPOSE */
+    vertical-align: middle;
+    align-self: center;
+  }
+  
+  .form-switch.form-switch-md .form-check-input {
+    height: 1.5rem;
+    width: calc(2rem + 0.75rem);
+    border-radius: 3rem;
+  }
