@@ -39,12 +39,15 @@
                 GND
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="1" name="b1" id="flexSwitchCheckDefault" onclick="enlighten()">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="1" name="b1" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                <img src="https://placehold.co/30x15/transparent/transparent/png" name="b1led"/>
+                <svg width="30" height="15" name="b1led">
+                    <rect width="30" height="15" id="b1led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -57,11 +60,14 @@
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="4096" name="a12" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a12led">
+                    <rect width="30" height="15" id="a12led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -70,15 +76,18 @@
                 B2
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                TX2+
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="2" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="2" name="b2" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b2led">
+                    <rect width="30" height="15" id="b2led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -87,15 +96,18 @@
                 A11
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                RX2+
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="8192" name="a11" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a11led">
+                    <rect width="30" height="15" id="a11led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -104,15 +116,18 @@
                 B3
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                TX2-
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="4" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="4" name="b3" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b3led">
+                    <rect width="30" height="15" id="b3led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -121,15 +136,18 @@
                 A10
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                RX2-
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="16384" name="a10" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a10led">
+                    <rect width="30" height="15" id="a10led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -138,15 +156,18 @@
                 B4
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                VBUS
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="8" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="8" name="b4" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b4led">
+                    <rect width="30" height="15" id="b4led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -155,15 +176,18 @@
                 A9
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                VBUS
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="32768" name="a9" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a9led">
+                    <rect width="30" height="15" id="a9led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -172,15 +196,18 @@
                 B5
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                CC2
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="16" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="16" name="b5" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b5led">
+                    <rect width="30" height="15" id="b5led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -189,15 +216,18 @@
                 A8
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                SUB1
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="65536" name="a8" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a8led">
+                    <rect width="30" height="15" id="a8led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -206,15 +236,18 @@
                 B6
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                D+
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="32" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="32" name="b6" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b6led">
+                    <rect width="30" height="15" id="b6led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -223,15 +256,18 @@
                 A7
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                D-
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="131072" name="a7" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a7led">
+                    <rect width="30" height="15" id="a7led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -240,15 +276,18 @@
                 B7
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                D-
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="64" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="64" name="b7" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b7led">
+                    <rect width="30" height="15" id="b7led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -257,15 +296,18 @@
                 A6
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                D+
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="262144" name="a6" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a6led">
+                    <rect width="30" height="15" id="a6led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -274,15 +316,18 @@
                 B8
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                SBU2
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="128" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="128" name="b8" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b8led">
+                    <rect width="30" height="15" id="b8led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -291,15 +336,18 @@
                 A5
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                CC1
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="524288" name="a5" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a5led">
+                    <rect width="30" height="15" id="a5led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -308,15 +356,18 @@
                 B9
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                VBUS
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="256" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="256" name="b9" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b9led">
+                    <rect width="30" height="15" id="b9led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -325,15 +376,18 @@
                 A4
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                VBUS
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="1048576" name="a4"
+                        id="flexSwitchCheckDefault" onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a4led">
+                    <rect width="30" height="15" id="a4led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -342,15 +396,18 @@
                 B10
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                RX1-
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="512" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="512" name="b10" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b10led">
+                    <rect width="30" height="15" id="b10led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -359,15 +416,18 @@
                 A3
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                TX1+
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="2097152" name="a3"
+                        id="flexSwitchCheckDefault" onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a3led">
+                    <rect width="30" height="15" id="a3led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -376,15 +436,18 @@
                 B11
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                RX1+
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="1024" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="1024" name="b11" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b11led">
+                    <rect width="30" height="15" id="b11led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -393,15 +456,18 @@
                 A2
             </div>
             <div class="col" class="col1" align="center">
-                GND
+                TX1+
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="4194304" name="a2"
+                        id="flexSwitchCheckDefault" onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a2led">
+                    <rect width="30" height="15" id="a2led"></rect>
+                </svg>
             </div>
         </div>
 
@@ -413,12 +479,15 @@
                 GND
             </div>
             <div class="col" class="col1" align="center">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="2048" id="flexSwitchCheckDefault">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="2048" name="b12" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="b12led">
+                    <rect width="30" height="15" id="b12led"></rect>
+                </svg>
             </div>
             <div class="col">
                 &nbsp;
@@ -431,22 +500,72 @@
             </div>
             <div class="col" class="col1" align="center">
                 <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="8388608" name="a1"
+                        id="flexSwitchCheckDefault" onclick="enlighten()">
                 </div>
             </div>
             <div class="col" class="col1" align="center">
-                LED HERE
+                <svg width="30" height="15" name="a1led">
+                    <rect width="30" height="15" id="a1led"></rect>
+                </svg>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <input type="button" value="Add" onclick="sumCheckedValues()">
+        <div class="row">
+            <div class="col-1" align="center">
+                ID
+            </div>
+            <div class="col-1" align="center">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="0" name="id" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
+                </div>
+            </div>
+            <div class="col-1" align="center">
+                <svg width="30" height="15" name="idled">
+                    <rect width="30" height="15" id="idled"></rect>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1" align="center">
+                Shield
+            </div>
+            <div class="col-1" align="center">
+                <div class="form-check form-switch form-switch-md">
+                    <input class="form-check-input" type="checkbox" value="0" name="shield" id="flexSwitchCheckDefault"
+                        onclick="enlighten()">
+                </div>
+            </div>
+            <div class="col-1" align="center">
+                <svg width="30" height="15" name="shieldled">
+                    <rect width="30" height="15" id="shieldled"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
         <div id="sum"></div>
     </div>
 
     <div class="container">
         <input type="button" value="Reset All" onclick="resetCheckboxes()">
+    </div>
+
+    <div>
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://manuals.plus/treedix/usb-cable-data-line-test-board-manual">Treedix Manual</a></li>
+
+            <li><a href="https://talk.macpowerusers.com/t/usb-c-cable-testing/35633">USB-C Cable Testing</a></li>
+
+            <li><a
+                    href="https://tidbits.com/2021/12/03/usbefuddled-untangling-the-rats-nest-of-usb-c-standards-and-cables/">USBefuddled:
+                    Untanging the Rats Nest of USB-C Standards and Cables</a></li>
+        </ul>
     </div>
 
     <script>
@@ -462,14 +581,17 @@
 
         function enlighten() {
             checkboxes.forEach(checkbox => {
-                if(checkbox.checked) {
-                    var name = checkbox.name + 'led';
-                    var img = document.getElementById(name);
-                    img.src = "https://placehold.co/30x15/FF9A00/FF9A00/png";
+                var id = checkbox.name + 'led';
+                var svg = document.getElementById(id);
+                if (checkbox.checked) {
+                    svg.style.fill = "#FF9A00";
                 } else {
-                    img.src = "https://placehold.co/30x15/transparent/transparent/png";
+                    svg.style.fill = "transparent";
                 }
             });
+
+            // Calculate the sum of the checked checkboxes
+            sumCheckedValues();
         }
 
         function sumCheckedValues() {
