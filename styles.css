@@ -1,4 +1,8 @@
 .row>div {
+  border: none; /* Remove the border for center-col */
+}
+
+.center-col {
   border: 1px solid grey;
 }
 
