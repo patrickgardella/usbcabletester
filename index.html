@@ -555,6 +555,38 @@
         <input type="button" value="Reset All" onclick="resetCheckboxes()">
     </div>
 
+<div>
+    <h2>Description of the device</h2>
+    <p>This device tests USB cables, indicating which pins are connected and whether they are functional.
+        It helps in identifying issues with USB connections and ensures proper functionality.
+
+        Pinrow A and B refer to the two rows of pins in a USB connector, with each pin having a specific function.
+    </p>
+    <p>Pinrow A will only have lights if a USB-C cable is attached. Otherwise Pinrow B lights will be used, for USB A and USB B plugs.</p>
+    
+    <h3>Pin Functionality</h3>
+    <p>Each pin in the USB connector has a specific function, and understanding these functions is crucial for diagnosing cable issues.</p>
+    <p>
+        <ul>
+            <li>`GND` is the cable ground wire.</li>
+            <li>`VBUS` is the cable power wire.</li>
+            <li>`TX1 +/-` and `RX1 +/-` are high speed data, in USB SS, SS+ TX or DP Alternate Mode.</li>
+            <li>`TX2 +/-` and `RX2 +/-` are also high speed data, in USB SS, SS+ TX or DP Alternate Mode.</li>
+            <li>`D+` and `D-` are the data wires in USB 2.0.</li>
+            <li>`CC1` and `CC2` are the configuration channel pins used for USB-C cable orientation and power delivery negotiation.</li>
+            <li>`SBU1` and `SBU2` are sideband use pins, often used for audio or other alternate modes.</li>
+            <li>`ID` is used for identifying the type of device connected. (Not commonly used.)</li>
+            <li>`Shield` is the cable shield wire, used for grounding and reducing electromagnetic interference. (Not commonly used.)</li>
+        </ul>
+    </p>
+    <h3>Plug Types</h3>
+    <p>Micro B and Mini B have `VBUS`, `GND`, `D+`, `D-` pins. They can also have an `ID` pin.</p>
+    <p>Type B 3.0 and Micro B 3.0 will have `VBUS`, `GND`, `D+`, `D-`, `TX1 +/-`, `RX1 +/-`, `TX2 +/-`, and `RX2 +/-` pins.</p>
+    <p>Apple Lightning connectors have a unique pin configuration, with `VBUS`, `GND`, `D+`, and `D-` pins. They also contain `ACC1` and `ACC2` pins (which have test pads on the back of the tester). They will often have the `Shield` pin.</p>
+    <p>USB-C cables will have both pinrows on each end ("top" and "bottom") and can contain all pins on this tester, except an `ID` pin.</p>
+    <p>Shielded cables will often have a `Shield` pin, which is used for grounding and reducing electromagnetic interference, and will light up the `Shield` LED.</p>
+</div>
+
     <div>
         <h2>References</h2>
         <ul>
@@ -571,6 +603,27 @@
     <script>
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
+        function interpretSum(sum) {
+            // Define interpretation messages based on sum values
+            if (sum === 0) {
+                return "No pins selected.";
+            } else if (sum === 257) {  
+                return "Power only cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
+            } else if (sum === 353) {  
+                return "Data and power cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
+            } else if (sum === 2145) {  
+                return "Data only cable. Often USB type B to USB type A cable, or an Apple Lightning cable.";
+            } else if (sum === 9476361) {  
+                return "Power only cable. Often USB-A to USB-C.";
+            } else if (sum === 9869577) {  
+                return "USB-C to USB-C cable providing USB 2.0 data speeds and charging.";
+            } else if (sum === 16777215) {  // All pins connected properly (all pins selected)
+                return "Cable functioning correctly - all pins connected.";
+            } else {
+                return "Cable may have connection issues. Check pin configuration.";
+            }
+        }
+        
         function resetCheckboxes() {
             checkboxes.forEach(checkbox => {
                 checkbox.checked = false;
@@ -608,7 +661,12 @@
             });
 
             let displayElement = document.getElementById("sum");
-            displayElement.innerHTML = sum;
+            
+            // Get interpretation message based on sum
+            const message = interpretSum(sum);
+            
+            // Display both sum and message
+            displayElement.innerHTML = `<p>Sum: ${sum}</p><p>${message}</p>`;
         }
     </script>
 
