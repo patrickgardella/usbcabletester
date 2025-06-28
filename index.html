@@ -15,667 +15,789 @@
 <body>
     <div class="container">
         <h1 class="mt-5">Interpreting the LEDS on a USB Cable Tester</h1>
+        <hr />
     </div>
-
-    <div class="container-md">
-
-        <div class="row">
-            <div class="col-4" align="center">
-                <p class="h6">Pinrow B</p>
-            </div>
-            <div class="col-4 center-col">
-                &nbsp;
-            </div>
-            <div class="col-4" align="center">
-                <p class="h6">Pinrow A</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B1
-            </div>
-            <div class="col col-1" align="center">
-                GND
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md" align="center">
-                    <input class="form-check-input" type="checkbox" value="1" name="b1" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b1led">
-                    <rect width="30" height="15" id="b1led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A12
-            </div>
-            <div class="col col-1" align="center">
-                GND
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="4096" name="a12" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a12led">
-                    <rect width="30" height="15" id="a12led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B2
-            </div>
-            <div class="col col-1" align="center">
-                TX2+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="2" name="b2" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b2led">
-                    <rect width="30" height="15" id="b2led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A11
-            </div>
-            <div class="col col-1" align="center">
-                RX2+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="8192" name="a11" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a11led">
-                    <rect width="30" height="15" id="a11led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B3
-            </div>
-            <div class="col col-1" align="center">
-                TX2-
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="4" name="b3" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b3led">
-                    <rect width="30" height="15" id="b3led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A10
-            </div>
-            <div class="col col-1" align="center">
-                RX2-
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="16384" name="a10" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a10led">
-                    <rect width="30" height="15" id="a10led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B4
-            </div>
-            <div class="col col-1" align="center">
-                VBUS
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="8" name="b4" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b4led">
-                    <rect width="30" height="15" id="b4led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A9
-            </div>
-            <div class="col col-1" align="center">
-                VBUS
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="32768" name="a9" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a9led">
-                    <rect width="30" height="15" id="a9led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B5
-            </div>
-            <div class="col col-1" align="center">
-                CC2
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="16" name="b5" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b5led">
-                    <rect width="30" height="15" id="b5led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A8
-            </div>
-            <div class="col col-1" align="center">
-                SUB1
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="65536" name="a8" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a8led">
-                    <rect width="30" height="15" id="a8led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B6
-            </div>
-            <div class="col col-1" align="center">
-                D+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="32" name="b6" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b6led">
-                    <rect width="30" height="15" id="b6led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A7
-            </div>
-            <div class="col col-1" align="center">
-                D-
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="131072" name="a7" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a7led">
-                    <rect width="30" height="15" id="a7led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B7
-            </div>
-            <div class="col col-1" align="center">
-                D-
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="64" name="b7" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b7led">
-                    <rect width="30" height="15" id="b7led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A6
-            </div>
-            <div class="col col-1" align="center">
-                D+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="262144" name="a6" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a6led">
-                    <rect width="30" height="15" id="a6led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B8
-            </div>
-            <div class="col col-1" align="center">
-                SBU2
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="128" name="b8" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b8led">
-                    <rect width="30" height="15" id="b8led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A5
-            </div>
-            <div class="col col-1" align="center">
-                CC1
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="524288" name="a5" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a5led">
-                    <rect width="30" height="15" id="a5led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B9
-            </div>
-            <div class="col col-1" align="center">
-                VBUS
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="256" name="b9" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b9led">
-                    <rect width="30" height="15" id="b9led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A4
-            </div>
-            <div class="col col-1" align="center">
-                VBUS
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="1048576" name="a4"
-                        id="flexSwitchCheckDefault" onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a4led">
-                    <rect width="30" height="15" id="a4led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B10
-            </div>
-            <div class="col col-1" align="center">
-                RX1-
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="512" name="b10" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b10led">
-                    <rect width="30" height="15" id="b10led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A3
-            </div>
-            <div class="col col-1" align="center">
-                TX1+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="2097152" name="a3"
-                        id="flexSwitchCheckDefault" onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a3led">
-                    <rect width="30" height="15" id="a3led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B11
-            </div>
-            <div class="col col-1" align="center">
-                RX1+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="1024" name="b11" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b11led">
-                    <rect width="30" height="15" id="b11led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A2
-            </div>
-            <div class="col col-1" align="center">
-                TX1+
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="4194304" name="a2"
-                        id="flexSwitchCheckDefault" onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a2led">
-                    <rect width="30" height="15" id="a2led"></rect>
-                </svg>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-1" align="center">
-                B12
-            </div>
-            <div class="col col-1" align="center">
-                GND
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="2048" name="b12" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="b12led">
-                    <rect width="30" height="15" id="b12led"></rect>
-                </svg>
-            </div>
-            <div class="col center-col">
-                &nbsp;
-            </div>
-            <div class="col col-1" align="center">
-                A1
-            </div>
-            <div class="col col-1" align="center">
-                GND
-            </div>
-            <div class="col col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="8388608" name="a1"
-                        id="flexSwitchCheckDefault" onclick="enlighten()">
-                </div>
-            </div>
-            <div class="col col-1" align="center">
-                <svg width="30" height="15" name="a1led">
-                    <rect width="30" height="15" id="a1led"></rect>
-                </svg>
-            </div>
-        </div>
+    <div class="container">
+        <h2>Description</h2>
+        <hr />
+        <p>I purchased a USB Cable tester to identify the pile of cables I have in my drawer. I selected the <a
+                href="https://www.amazon.com/dp/B0CF95VL2Y?th=1&linkCode=ll1&tag=thetel0e-20&linkId=3973f124b3cc3a81d75b1fe60c898c90&language=en_US&ref_=as_li_ss_tl">Treedix
+                USB Cable Tester</a> <small>(affiliate link)</small> on Amazon, out of many choices.</p>
+        <p>However it didn't come with a usable users manual,so I had to figure it out myself. (And I may be wrong!) I
+            have tested this with all of the cables I have, but if you find more, please contribute on GitHub.</p>
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-1" align="center">
-                ID
-            </div>
-            <div class="col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="0" name="id" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
+        <h2>How to use the tester</h2>
+        <hr />
+        <p>Plug in a USB cable into the left side of the tester. The right side will light up with the LEDs that are
+            connected.</p>
+        <p>There are two rows of pins, Pinrow A and Pinrow B. Pinrow A is used for USB-C cables, while Pinrow B is used
+            for USB-A and USB-B cables.</p>
+        <p>Each pin has a specific function, and the LED will light up if that pin is connected in the cable.</p>
+        <p>Click on the corresponding button below to interpret the LEDs.</p>
+
+        <div class="container-md">
+            <hr />
+            <div class="row">
+                <div class="col-4" align="center">
+                    <p class="h6">Pinrow B</p>
+                </div>
+                <div class="col-4 center-col">
+                    &nbsp;
+                </div>
+                <div class="col-4" align="center">
+                    <p class="h6">Pinrow A</p>
                 </div>
             </div>
-            <div class="col-1" align="center">
-                <svg width="30" height="15" name="idled">
-                    <rect width="30" height="15" id="idled"></rect>
-                </svg>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-1" align="center">
-                Shield
-            </div>
-            <div class="col-1" align="center">
-                <div class="form-check form-switch form-switch-md">
-                    <input class="form-check-input" type="checkbox" value="0" name="shield" id="flexSwitchCheckDefault"
-                        onclick="enlighten()">
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B1
+                </div>
+                <div class="col col-1" align="center">
+                    GND
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md" align="center">
+                        <input class="form-check-input" type="checkbox" value="1" name="b1" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b1led">
+                        <rect width="30" height="15" id="b1led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A12
+                </div>
+                <div class="col col-1" align="center">
+                    GND
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="4096" name="a12"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a12led">
+                        <rect width="30" height="15" id="a12led"></rect>
+                    </svg>
                 </div>
             </div>
-            <div class="col-1" align="center">
-                <svg width="30" height="15" name="shieldled">
-                    <rect width="30" height="15" id="shieldled"></rect>
-                </svg>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B2
+                </div>
+                <div class="col col-1" align="center">
+                    TX2+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="2" name="b2" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b2led">
+                        <rect width="30" height="15" id="b2led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A11
+                </div>
+                <div class="col col-1" align="center">
+                    RX2+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="8192" name="a11"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a11led">
+                        <rect width="30" height="15" id="a11led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B3
+                </div>
+                <div class="col col-1" align="center">
+                    TX2-
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="4" name="b3" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b3led">
+                        <rect width="30" height="15" id="b3led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A10
+                </div>
+                <div class="col col-1" align="center">
+                    RX2-
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="16384" name="a10"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a10led">
+                        <rect width="30" height="15" id="a10led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B4
+                </div>
+                <div class="col col-1" align="center">
+                    VBUS
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="8" name="b4" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b4led">
+                        <rect width="30" height="15" id="b4led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A9
+                </div>
+                <div class="col col-1" align="center">
+                    VBUS
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="32768" name="a9"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a9led">
+                        <rect width="30" height="15" id="a9led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B5
+                </div>
+                <div class="col col-1" align="center">
+                    CC2
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="16" name="b5" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b5led">
+                        <rect width="30" height="15" id="b5led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A8
+                </div>
+                <div class="col col-1" align="center">
+                    SUB1
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="65536" name="a8"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a8led">
+                        <rect width="30" height="15" id="a8led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B6
+                </div>
+                <div class="col col-1" align="center">
+                    D+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="32" name="b6" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b6led">
+                        <rect width="30" height="15" id="b6led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A7
+                </div>
+                <div class="col col-1" align="center">
+                    D-
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="131072" name="a7"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a7led">
+                        <rect width="30" height="15" id="a7led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B7
+                </div>
+                <div class="col col-1" align="center">
+                    D-
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="64" name="b7" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b7led">
+                        <rect width="30" height="15" id="b7led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A6
+                </div>
+                <div class="col col-1" align="center">
+                    D+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="262144" name="a6"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a6led">
+                        <rect width="30" height="15" id="a6led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B8
+                </div>
+                <div class="col col-1" align="center">
+                    SBU2
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="128" name="b8"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b8led">
+                        <rect width="30" height="15" id="b8led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A5
+                </div>
+                <div class="col col-1" align="center">
+                    CC1
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="524288" name="a5"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a5led">
+                        <rect width="30" height="15" id="a5led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B9
+                </div>
+                <div class="col col-1" align="center">
+                    VBUS
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="256" name="b9"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b9led">
+                        <rect width="30" height="15" id="b9led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A4
+                </div>
+                <div class="col col-1" align="center">
+                    VBUS
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="1048576" name="a4"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a4led">
+                        <rect width="30" height="15" id="a4led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B10
+                </div>
+                <div class="col col-1" align="center">
+                    RX1-
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="512" name="b10"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b10led">
+                        <rect width="30" height="15" id="b10led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A3
+                </div>
+                <div class="col col-1" align="center">
+                    TX1+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="2097152" name="a3"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a3led">
+                        <rect width="30" height="15" id="a3led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B11
+                </div>
+                <div class="col col-1" align="center">
+                    RX1+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="1024" name="b11"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b11led">
+                        <rect width="30" height="15" id="b11led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A2
+                </div>
+                <div class="col col-1" align="center">
+                    TX1+
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="4194304" name="a2"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a2led">
+                        <rect width="30" height="15" id="a2led"></rect>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-1" align="center">
+                    B12
+                </div>
+                <div class="col col-1" align="center">
+                    GND
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="2048" name="b12"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="b12led">
+                        <rect width="30" height="15" id="b12led"></rect>
+                    </svg>
+                </div>
+                <div class="col center-col">
+                    &nbsp;
+                </div>
+                <div class="col col-1" align="center">
+                    A1
+                </div>
+                <div class="col col-1" align="center">
+                    GND
+                </div>
+                <div class="col col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="8388608" name="a1"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col col-1" align="center">
+                    <svg width="30" height="15" name="a1led">
+                        <rect width="30" height="15" id="a1led"></rect>
+                    </svg>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div id="sum"></div>
-    </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-1" align="center">
+                    ID
+                </div>
+                <div class="col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="0" name="id" id="flexSwitchCheckDefault"
+                            onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col-1" align="center">
+                    <svg width="30" height="15" name="idled">
+                        <rect width="30" height="15" id="idled"></rect>
+                    </svg>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1" align="center">
+                    Shield
+                </div>
+                <div class="col-1" align="center">
+                    <div class="form-check form-switch form-switch-md">
+                        <input class="form-check-input" type="checkbox" value="0" name="shield"
+                            id="flexSwitchCheckDefault" onclick="enlighten()">
+                    </div>
+                </div>
+                <div class="col-1" align="center">
+                    <svg width="30" height="15" name="shieldled">
+                        <rect width="30" height="15" id="shieldled"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-    <div class="container">
-        <input type="button" value="Reset All" onclick="resetCheckboxes()">
-    </div>
+        <div class="container">
+            <div id="sum"></div>
+        </div>
 
-<div>
-    <h2>Description of the device</h2>
-    <p>This device tests USB cables, indicating which pins are connected and whether they are functional.
-        It helps in identifying issues with USB connections and ensures proper functionality.
+        <div class="container">
+            <input type="button" value="Reset All" onclick="resetCheckboxes()">
+        </div>
 
-        Pinrow A and B refer to the two rows of pins in a USB connector, with each pin having a specific function.
-    </p>
-    <p>Pinrow A will only have lights if a USB-C cable is attached. Otherwise Pinrow B lights will be used, for USB A and USB B plugs.</p>
-    
-    <h3>Pin Functionality</h3>
-    <p>Each pin in the USB connector has a specific function, and understanding these functions is crucial for diagnosing cable issues.</p>
-    <p>
-        <ul>
-            <li>`GND` is the cable ground wire.</li>
-            <li>`VBUS` is the cable power wire.</li>
-            <li>`TX1 +/-` and `RX1 +/-` are high speed data, in USB SS, SS+ TX or DP Alternate Mode.</li>
-            <li>`TX2 +/-` and `RX2 +/-` are also high speed data, in USB SS, SS+ TX or DP Alternate Mode.</li>
-            <li>`D+` and `D-` are the data wires in USB 2.0.</li>
-            <li>`CC1` and `CC2` are the configuration channel pins used for USB-C cable orientation and power delivery negotiation.</li>
-            <li>`SBU1` and `SBU2` are sideband use pins, often used for audio or other alternate modes.</li>
-            <li>`ID` is used for identifying the type of device connected. (Not commonly used.)</li>
-            <li>`Shield` is the cable shield wire, used for grounding and reducing electromagnetic interference. (Not commonly used.)</li>
-        </ul>
-    </p>
-    <h3>Plug Types</h3>
-    <p>Micro B and Mini B have `VBUS`, `GND`, `D+`, `D-` pins. They can also have an `ID` pin.</p>
-    <p>Type B 3.0 and Micro B 3.0 will have `VBUS`, `GND`, `D+`, `D-`, `TX1 +/-`, `RX1 +/-`, `TX2 +/-`, and `RX2 +/-` pins.</p>
-    <p>Apple Lightning connectors have a unique pin configuration, with `VBUS`, `GND`, `D+`, and `D-` pins. They also contain `ACC1` and `ACC2` pins (which have test pads on the back of the tester). They will often have the `Shield` pin.</p>
-    <p>USB-C cables will have both pinrows on each end ("top" and "bottom") and can contain all pins on this tester, except an `ID` pin.</p>
-    <p>Shielded cables will often have a `Shield` pin, which is used for grounding and reducing electromagnetic interference, and will light up the `Shield` LED.</p>
-</div>
+        <div class="container">
+            <h2>Description of the device</h2>
+            <hr />
 
-    <div>
-        <h2>References</h2>
-        <ul>
-            <li><a href="https://manuals.plus/treedix/usb-cable-data-line-test-board-manual">Treedix Manual</a></li>
+            <p>This device tests USB cables, indicating which pins are connected and whether they are functional.
+                It helps in identifying issues with USB connections and ensures proper functionality.
 
-            <li><a href="https://talk.macpowerusers.com/t/usb-c-cable-testing/35633">USB-C Cable Testing</a></li>
+                Pinrow A and B refer to the two rows of pins in a USB connector, with each pin having a specific
+                function.
+            </p>
+            <p>Pinrow A will only have lights if a USB-C cable is attached. Otherwise Pinrow B lights will be used, for
+                USB A and USB B plugs.</p>
 
-            <li><a
-                    href="https://tidbits.com/2021/12/03/usbefuddled-untangling-the-rats-nest-of-usb-c-standards-and-cables/">USBefuddled:
-                    Untanging the Rats Nest of USB-C Standards and Cables</a></li>
-        </ul>
-    </div>
+            <h3>Pin Functionality</h3>
+            <hr />
+            <p>Each pin in the USB connector has a specific function, and understanding these functions is crucial for
+                diagnosing cable issues.</p>
+            <p>
+            <ul>
+                <li>`GND` is the cable ground wire.</li>
+                <li>`VBUS` is the cable bus power wire. (+5 V)</li>
+                <li>`TX1 +/-` and `RX1 +/-` are high speed data, used in USB 3 or later cables.</li>
+                <li>`TX2 +/-` and `RX2 +/-` are also high speed data, used in USB 3 or later cables.</li>
+                <li>`D+` and `D-` are the data wires in USB 2.0.</li>
+                <li>`CC1` and `CC2` are the configuration channel pins used for USB-C cable orientation and power
+                    delivery negotiation.</li>
+                <li>`SBU1` and `SBU2` are sideband use pins, often used for audio or other alternate modes.</li>
+                <li>`ID` is used by an On-The-Go cable for identifying the end of the cable for how the device should
+                    behave (host or peripheral). (Not commonly used.)</li>
+                <li>`Shield` is the cable shield wire, used for grounding and reducing electromagnetic interference.
+                    (Not commonly used.)</li>
+            </ul>
+            </p>
 
-    <script>
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            <h3>Plug Types</h3>
+            <hr />
+            <p>Micro B and Mini B have `VBUS`, `GND`, `D+`, `D-` pins. They can also have an `ID` pin.</p>
+            <p>Type B 3.0 and Micro B 3.0 will have `VBUS`, `GND`, `D+`, `D-`, `TX1 +/-`, `RX1 +/-`, `TX2 +/-`, and `RX2
+                +/-` pins.</p>
+            <p>Apple Lightning connectors have a unique pin configuration, with `VBUS`, `GND`, `D+`, and `D-` pins. They
+                also contain `ACC1` and `ACC2` pins (which have test pads on the back of the tester). They will often
+                have the `Shield` pin.</p>
+            <p>USB-C cables will have both pinrows on each end ("top" and "bottom") and can contain all pins on this
+                tester, except an `ID` pin.</p>
+            <p>Shielded cables will often have a `Shield` pin, which is used for grounding and reducing electromagnetic
+                interference, and will light up the `Shield` LED.</p>
 
-        function interpretSum(sum) {
-            // Define interpretation messages based on sum values
-            if (sum === 0) {
-                return "No pins selected.";
-            } else if (sum === 257) {  
-                return "Power only cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
-            } else if (sum === 353) {  
-                return "Data and power cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
-            } else if (sum === 2145) {  
-                return "Data only cable. Often USB type B to USB type A cable, or an Apple Lightning cable.";
-            } else if (sum === 9476361) {  
-                return "Power only cable. Often USB-A to USB-C.";
-            } else if (sum === 9869577) {  
-                return "USB-C to USB-C cable providing USB 2.0 data speeds and charging.";
-            } else if (sum === 16777215) {  // All pins connected properly (all pins selected)
-                return "Cable functioning correctly - all pins connected.";
-            } else {
-                return "Cable may have connection issues. Check pin configuration.";
-            }
-        }
-        
-        function resetCheckboxes() {
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = false;
-            });
-            let displayElement = document.getElementById("sum");
-            displayElement.innerHTML = "";
-        }
+            <h3>Colors</h3>
+            <hr />
+            <p>The tester has two USB A ports, on the left side. One is green and the other blue.</p>
+            <p>Generally, blue indicates a USB 3.0 connection, while other colors indicate a USB 2.0 (or older)
+                connection.</p>
 
-        function enlighten() {
-            checkboxes.forEach(checkbox => {
-                var id = checkbox.name + 'led';
-                var svg = document.getElementById(id);
-                if (checkbox.checked) {
-                    svg.style.fill = "#FF9A00";
-                } else {
-                    svg.style.fill = "transparent";
-                }
-            });
 
-            // Calculate the sum of the checked checkboxes
-            sumCheckedValues();
-        }
+        </div>
+        <div class="container">
+            From <a href="https://en.wikipedia.org/wiki/USB_hardware#Connector_colors">USB Hardware - Wikipedia</a>:
 
-        function sumCheckedValues() {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width:5px;">Color</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color:white; width:5px; padding:0; border:none;"></td>
+                        <td>White <small>(required by USB standards)</small></td>
+                        <td>Receptacles and plugs</td>
+                        <td>Micro‑A, Mini‑A</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:black; width:5px; padding:0; border:none;"></td>
+                        <td>Black <small>(required by USB standards)</small></td>
+                        <td>Receptacles and plugs</td>
+                        <td>Micro‑B, Mini‑B</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:grey; width:5px; padding:0; border:none;"></td>
+                        <td>Grey <small>(required by USB standards)</small></td>
+                        <td>Receptacles</td>
+                        <td>Micro‑AB, Mini‑AB</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#005eb8; width:5px; padding:0; border:none;"></td>
+                        <td>Blue (Pantone 300 C) <small>(recommended in USB standards)</small></td>
+                        <td>Receptacles</td>
+                        <td>Indicates a Standard‑A connector supports USB 5Gbps (introduced in USB 3.0), and possibly
+                            10Gbps (introduced in USB 3.1)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#6cb0c5; width:5px; padding:0; border:none;"></td>
+                        <td>Teal blue <small>(not part of USB standards)</small></td>
+                        <td>Receptacles and plugs</td>
+                        <td>Indicates a Standard‑A or Standard‑B connector supports USB SuperSpeed(+) 10Gbps (introduced
+                            in USB 3.1)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00C000; width:5px; padding:0; border:none;"></td>
+                        <td>Green <small>(not part of USB standards)</small></td>
+                        <td>Receptacles and plugs</td>
+                        <td>Type‑A or Type‑B, Qualcomm [Quick Charge (QC)]</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#800080; width:5px; padding:0; border:none;"></td>
+                        <td>Purple <small>(not part of USB standards)</small></td>
+                        <td>Plugs only</td>
+                        <td>Type‑A or Type‑C, Huawei SuperCharge</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0; border:none; width:5px; height:100%;">
+                            <div
+                                style="width:100%; min-height:90px; height:100%;  background: linear-gradient(to right, yellow 50%, red 50%); display:block;">
+                            </div>
+                        </td>
+                        <td>Yellow or Red <small>(not part of USB standards)</small></td>
+                        <td>Receptacles only</td>
+                        <td>High-current or sleep-and-charge</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:orange; width:5px; padding:0; border:none;"></td>
+                        <td>Orange <small>(not part of USB standards)</small></td>
+                        <td>Receptacles only</td>
+                        <td>High-retention connector, mostly used on industrial hardware</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>References</h2>
+            <hr />
+            <ul>
+                <li><a href="https://manuals.plus/treedix/usb-cable-data-line-test-board-manual">Treedix Manual</a></li>
+
+                <li><a href="https://talk.macpowerusers.com/t/usb-c-cable-testing/35633">USB-C Cable Testing</a></li>
+
+                <li><a
+                        href="https://tidbits.com/2021/12/03/usbefuddled-untangling-the-rats-nest-of-usb-c-standards-and-cables/">USBefuddled:
+                        Untanging the Rats Nest of USB-C Standards and Cables</a></li>
+                <li><a href="https://www.usb.org/documents/usb-3-2-specification">USB 3.2 Specification</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/USB_hardware">USB Hardware - Wikipedia</a></li>
+            </ul>
+        </div>
+
+        <script>
             const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            let sum = 0;
 
-            checkboxes.forEach(checkbox => {
-                if (checkbox.checked) {
-                    const value = parseFloat(checkbox.value);
-                    if (!isNaN(value)) {
-                        sum += value;
-                    }
+            function interpretSum(sum) {
+                // Define interpretation messages based on sum values
+                if (sum === 0) {
+                    return "No pins selected.";
+                } else if (sum === 257) {
+                    return "Power only cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
+                } else if (sum === 353) {
+                    return "Data and power cable (USB 1.1 - 2.0). Often USB micro B to USB type A cable.";
+                } else if (sum === 2145) {
+                    return "Data only cable. Often USB type B to USB type A cable, or an Apple Lightning cable.";
+                } else if (sum === 9476361) {
+                    return "Power only cable. Often USB-A to USB-C.";
+                } else if (sum === 9869577) {
+                    return "USB-C to USB-C cable providing USB 2.0 data speeds and charging.";
+                } else if (sum === 16777215) {
+                    return "All pins are connected. This is not a valid USB cable configuration.";
+                } else {
+                    return "Cable may have connection issues. Check pin configuration.";
                 }
-            });
+            }
 
-            let displayElement = document.getElementById("sum");
-            
-            // Get interpretation message based on sum
-            const message = interpretSum(sum);
-            
-            // Display both sum and message
-            displayElement.innerHTML = `<p>Sum: ${sum}</p><p>${message}</p>`;
-        }
-    </script>
+            function resetCheckboxes() {
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                let displayElement = document.getElementById("sum");
+                displayElement.innerHTML = "";
+            }
 
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            function enlighten() {
+                checkboxes.forEach(checkbox => {
+                    var id = checkbox.name + 'led';
+                    var svg = document.getElementById(id);
+                    if (checkbox.checked) {
+                        svg.style.fill = "#FF9A00";
+                    } else {
+                        svg.style.fill = "transparent";
+                    }
+                });
+
+                // Calculate the sum of the checked checkboxes
+                sumCheckedValues();
+            }
+
+            function sumCheckedValues() {
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                let sum = 0;
+
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const value = parseFloat(checkbox.value);
+                        if (!isNaN(value)) {
+                            sum += value;
+                        }
+                    }
+                });
+
+                let displayElement = document.getElementById("sum");
+
+                // Get interpretation message based on sum
+                const message = interpretSum(sum);
+
+                // Display both sum and message
+                displayElement.innerHTML = `<p>Sum: ${sum}</p><p>${message}</p>`;
+            }
+        </script>
+
+        <!-- jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
