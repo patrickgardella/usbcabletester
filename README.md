@@ -2,6 +2,8 @@
 
 **NOTE** This is a work in progress. Please leave comments or better, pull requests, with updates. Please verify with actual cables. 
 
+This "application" is hosted on GitHub pages: <a href="https://patrickgardella.github.io/usbcabletester/">Interpreting the LEDs on a USB Cable Tester</a>.
+
 ## Description
 
 For the initial work, I am using the [Treedix USB Cable Tester](https://amzn.to/3PSow5w) (affiliate link). The [Treedix USB Cable Tester](https://amzn.to/3PSow5w) (affiliate link) is an inexpensive, but highly functional USB Cable Tester. You can use it to identify and test many different types of USB cables, including unusual ones.
