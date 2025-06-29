@@ -14,28 +14,65 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5">Interpreting the LEDS on a USB Cable Tester</h1>
-        <hr />
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <div class="logo-container">
+                    <svg width="50" height="50" viewBox="0 0 50 50" class="logo">
+                        <rect x="5" y="10" width="40" height="30" rx="5" fill="#3A3A3A" />
+                        <circle cx="15" cy="20" r="3" fill="#FF9A00" />
+                        <circle cx="25" cy="20" r="3" fill="#FF9A00" />
+                        <circle cx="35" cy="20" r="3" fill="#FF9A00" />
+                        <circle cx="15" cy="30" r="3" fill="#FF9A00" />
+                        <circle cx="25" cy="30" r="3" fill="#FF9A00" />
+                        <circle cx="35" cy="30" r="3" fill="#FF9A00" />
+                        <path d="M5 44 L45 44" stroke="#3A3A3A" stroke-width="3" />
+                        <path d="M25 40 L25 44" stroke="#3A3A3A" stroke-width="3" />
+                    </svg>
+                    <span class="logo-text">USB Tester</span>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1 class="mt-2">USB Cable Tester Interface</h1>
+                <p class="lead">Visualize and interpret LED patterns to diagnose cable issues</p>
+            </div>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2" id="help-button"
+                    onclick="toggleHelpOverlay()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                    </svg>
+                    Help
+                </button>
+            </div>
+        </header>
     </div>
     <div class="container">
         <h2>Description</h2>
         <hr />
-        <p>I purchased a USB Cable tester to identify the pile of cables I have in my drawer. I selected the <a
-                href="https://www.amazon.com/dp/B0CF95VL2Y?th=1&linkCode=ll1&tag=thetel0e-20&linkId=3973f124b3cc3a81d75b1fe60c898c90&language=en_US&ref_=as_li_ss_tl">Treedix
-                USB Cable Tester</a> <small>(affiliate link)</small> on Amazon, out of many choices.</p>
-        <p>However it didn't come with a usable users manual,so I had to figure it out myself. (And I may be wrong!) I
-            have tested this with all of the cables I have, but if you find more, please contribute on <a href="https://github.com/patrickgardella/usbcabletester">GitHub</a>.</p>
+        <p>I purchased a USB Cable tester to identify the pile of cables I have in my drawer. I selected a <a
+                href="https://www.amazon.com/dp/B0CF95VL2Y?th=1&linkCode=ll1&tag=thetel0e-20&linkId=3973f124b3cc3a81d75b1fe60c898c90&language=en_US&ref_=as_li_ss_tl">USB
+                Cable Tester</a> <small>(affiliate link)</small> on Amazon, out of many choices.</p>
+        <p>However it didn't come with a usable users manual, so I had to figure it out myself. (And I may be wrong!) I
+            have tested this with all of the cables I have, but if you find more, please contribute on <a
+                href="https://github.com/patrickgardella/usbcabletester">GitHub</a>.</p>
     </div>
 
     <div class="container">
         <h2>How to use the tester</h2>
         <hr />
-        <p>Plug in a USB cable into the left side of the tester. The right side will light up with the LEDs that are
-            connected.</p>
-        <p>There are two rows of pins, Pinrow A and Pinrow B. Pinrow A is used for USB-C cables, while Pinrow B is used
-            for USB-A and USB-B cables.</p>
-        <p>Each pin has a specific function, and the LED will light up if that pin is connected in the cable.</p>
-        <p>Click on the corresponding button below to interpret the LEDs.</p>
+        <p>1. Plug in a USB cable into the receptacles on the left, right, and bottom of the tester. When the cable is
+            attached, one or more LEDs will light.</p>
+        <p>2. Each pin has a specific function, and the LED will light up if that pin is connected in the cable.</p>
+        <p>3. A message will appear below the LEDs describing the cable being tested.</p>
+        <p>Note: The left side has two Type A receptacles; the top one is blue, and has the words "Type A 3.0", and the
+            greenish one has the words "Type A 2.0": If your cable has a blue plug, you should insert it into the blue
+            (upper) receptacle.</p>
+        <p><strong>Note: Do not plug the ends of the cable into anything but the tester. Connecting it to a device or
+                charger will damage the USB Tester.</strong></p>
 
         <div class="container-md">
             <hr />
@@ -710,7 +747,8 @@
             <h2>References</h2>
             <hr />
             <ul>
-                <li><a href="https://manuals.plus/treedix/usb-cable-data-line-test-board-manual">Treedix Manual</a></li>
+                <li><a href="https://manuals.plus/treedix/usb-cable-data-line-test-board-manual">USB Cable Tester
+                        Manual</a></li>
 
                 <li><a href="https://talk.macpowerusers.com/t/usb-c-cable-testing/35633">USB-C Cable Testing</a></li>
 
@@ -724,6 +762,15 @@
 
         <script>
             const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            function toggleHelpOverlay() {
+                const overlay = document.getElementById("helpOverlay");
+                if (overlay.style.display === "flex") {
+                    overlay.style.display = "none";
+                } else {
+                    overlay.style.display = "flex";
+                }
+            }
 
             function interpretSum(sum) {
                 // Define interpretation messages based on sum values
@@ -749,6 +796,11 @@
             function resetCheckboxes() {
                 checkboxes.forEach(checkbox => {
                     checkbox.checked = false;
+                    var id = checkbox.name + 'led';
+                    var svg = document.getElementById(id);
+                    if (svg) {
+                        svg.style.fill = "transparent";
+                    }
                 });
                 let displayElement = document.getElementById("sum");
                 displayElement.innerHTML = "";
@@ -785,13 +837,60 @@
                 let displayElement = document.getElementById("sum");
 
                 // Get interpretation message based on sum
-                const message = interpretSum(sum);
+                var message = interpretSum(sum);
 
-                // Display both sum and message
-                displayElement.innerHTML = `<p>${message}</p>`;
+                // Check if ID or Shield is checked and display a message
+                const idCheckbox = document.querySelector('input[name="id"]');
+                const shieldCheckbox = document.querySelector('input[name="shield"]');
+                let extraMsg = "";
+                if (idCheckbox && idCheckbox.checked) {
+                    extraMsg += "<p>The ID pin is connected. This is typically used for USB OTG (On-The-Go) cables.</p>";
+                }
+                if (shieldCheckbox && shieldCheckbox.checked) {
+                    extraMsg += "<p>The Shield pin is connected. This indicates the cable has a shield for grounding and EMI protection.</p>";
+                }
+
+                displayElement.innerHTML = `<p>${message}</p><p>${extraMsg}</p>`;
                 //displayElement.innerHTML = `<p>Sum: ${sum}</p><p>${message}</p>`;
             }
         </script>
+
+        <!-- Help Overlay -->
+        <div id="helpOverlay" class="overlay">
+            <div class="overlay-content">
+                <div class="overlay-header">
+                    <h2>USB Cable Tester Help</h2>
+                    <button type="button" class="close-btn" onclick="toggleHelpOverlay()">&times;</button>
+                </div>
+                <div class="overlay-body">
+                    <h4>How to Use This Tool</h4>
+                    <ol>
+                        <li>Connect your USB cable to the physical tester device</li>
+                        <li>Observe which LEDs light up on the device</li>
+                        <li>Check the corresponding boxes in this interface to simulate the LEDs</li>
+                        <li>View the interpretation of your cable's functionality</li>
+                    </ol>
+
+                    <h4>Understanding Pin Functions</h4>
+                    <ul>
+                        <li><strong>GND</strong> - Ground connections</li>
+                        <li><strong>VBUS</strong> - Power lines (+5V)</li>
+                        <li><strong>D+/D-</strong> - USB 2.0 data lines</li>
+                        <li><strong>TX/RX</strong> - High-speed data lines for USB 3.0+</li>
+                        <li><strong>CC</strong> - Configuration channels used by USB-C</li>
+                        <li><strong>SBU</strong> - Sideband use channels for alternate modes</li>
+                    </ul>
+
+                    <h4>Common Cable Types</h4>
+                    <ul>
+                        <li><strong>Power only</strong> - Only VBUS and GND pins are connected</li>
+                        <li><strong>USB 2.0</strong> - VBUS, GND, D+, and D- pins are connected</li>
+                        <li><strong>USB 3.0+</strong> - All power and data pins (including TX/RX pairs)</li>
+                        <li><strong>USB-C</strong> - Uses both A and B pinrows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- jQuery and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
